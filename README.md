@@ -9,7 +9,7 @@
 Each top level folder corresponds to a triggered build on Docker Hub.
 Pushing a new tag to GitHub will trigger a build and tag a new image on Docker Hub.
 
-Tags must be of the form `{folder}-{version}`, e.g., `httpie-1.0.0`.
+Tags must be of the form `{folder}-{version}`, e.g., `http-1.0.0`.
 
 Additionally, pushing to master will build all containers
 and update the corresponding latest tag name.
