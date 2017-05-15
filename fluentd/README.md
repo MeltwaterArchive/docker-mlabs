@@ -1,5 +1,16 @@
 # Fluentd Log Daemon for Kubernetes
 
+Collects logs on Kubernetes nodes with [Fluentd]
+and sends them to [S3] and [Elasticsearch].
+
+All containers with names prefixed by `mlabs-` are assumed
+to log JSON which is sent to Elasticsearch.
+All other logs are sent to S3.
+
+[Elasticsearch]: https://www.elastic.co/products/elasticsearch
+[Fluentd]: https://www.fluentd.org/
+[S3]: https://aws.amazon.com/s3/
+
 ## Environment Variables
 
 ### AWS S3
