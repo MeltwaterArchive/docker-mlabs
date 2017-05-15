@@ -1,7 +1,7 @@
 # HTTPie with jq
 
-The entrypoint is the `http` command provided by [HTTPie]
-and [jq] is included for JSON manipulation.
+The entrypoint is the `http` command provided by [HTTPie].
+[jq] is included for JSON manipulation.
 
 [HTTPie]: https://httpie.org/
 [jq]: https://stedolan.github.io/jq/
