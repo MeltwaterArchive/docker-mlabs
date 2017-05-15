@@ -4,6 +4,13 @@
 [![GitHub license](https://img.shields.io/github/license/meltwater/docker-mlabs.svg)](./LICENSE.txt)
 [![Docker Build Status](https://img.shields.io/docker/build/meltwater/docker-mlabs.svg)](https://hub.docker.com/u/meltwater/docker-mlabs/)
 
+## Development
+
+Each top level folder corresponds to a triggered build on Docker Hub.
+Pushing a new tag to GitHub will trigger a build and tag a new image on Docker Hub.
+
+Tags must be of the form `{folder}-{version}`, e.g., `httpie-1.0.0`.
+
 ## License
 
 These containers are licensed under the MIT license.
