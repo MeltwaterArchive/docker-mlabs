@@ -2,8 +2,8 @@
 
 The entrypoint is the [`redis-cli`][redis-cli] command provided by [Redis].
 
-[redis-cli]
 [Redis]: https://redis.io/
+[redis-cli]: https://redis.io/topics/rediscli
 
 ## License
 
