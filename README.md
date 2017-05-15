@@ -11,6 +11,11 @@ Pushing a new tag to GitHub will trigger a build and tag a new image on Docker H
 
 Tags must be of the form `{folder}-{version}`, e.g., `httpie-1.0.0`.
 
+Additionally, pushing to master will build all containers
+and update the corresponding latest tag name.
+
+These triggered builds must be configured for all new containers.
+
 ## License
 
 These containers are licensed under the MIT license.
