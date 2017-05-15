@@ -1,8 +1,9 @@
 # MariaDB Client
 
-The entrypoint is the `mysql` client command provided by [MariaDB].
+The entrypoint is the [`mysql`] client command provided by [MariaDB].
 
 [MariaDB]: https://mariadb.org/
+[mysql]: https://mariadb.com/kb/en/mariadb/mysql-command-line-client/
 
 ## License
 
