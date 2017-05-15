@@ -1,6 +1,5 @@
 FROM alpine:3.5
 
-RUN apk add --no-cache \
-    mariadb-client
+RUN apk add --no-cache mariadb-client
 
 ENTRYPOINT ["mysql"]
