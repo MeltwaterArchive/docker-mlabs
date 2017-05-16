@@ -1,4 +1,4 @@
-# Public utility docker containers
+# Public Utility Docker Containers
 
 [![GitHub repo](https://img.shields.io/badge/github-repo-blue.svg)](https://github.com/meltwater/docker-mlabs)
 [![GitHub license](https://img.shields.io/github/license/meltwater/docker-mlabs.svg)](./LICENSE.txt)
