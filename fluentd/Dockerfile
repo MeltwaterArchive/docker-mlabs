@@ -1,4 +1,4 @@
-FROM fluent/fluentd:v0.14.13-onbuild
+FROM fluent/fluentd:v0.14.14-onbuild
 
 USER root
 
