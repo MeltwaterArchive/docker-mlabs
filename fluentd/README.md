@@ -21,12 +21,22 @@ All other logs are sent to S3.
 - `CLUSTER='prod'`
 - `HOSTNAME='example'`
 
-### Elasticsearch
+### Meltwater Labs Elasticsearch
 
-- `ELASTICSEARCH_HOST='es.example.com'`
-- `ELASTICSEARCH_PORT='9243'`
-- `ELASTICSEARCH_USER='fluentd'`
-- `ELASTICSEARCH_PASSWORD='password'`
+- `MLABS_ELASTICSEARCH_HOST='es.example.com'`
+- `MLABS_ELASTICSEARCH_PORT='9243'`
+- `MLABS_ELASTICSEARCH_USER='fluentd'`
+- `MLABS_ELASTICSEARCH_PASSWORD='password'`
+
+### Executive Alerts Elasticsearch
+
+- `EA_ELASTICSEARCH_HOST='es.example.com'`
+- `EA_ELASTICSEARCH_PORT='9243'`
+- `EA_ELASTICSEARCH_USER='fluentd'`
+- `EA_ELASTICSEARCH_PASSWORD='password'`
+- `EA_ELASTICSEARCH_SCHEME='https'`
+- `EA_ELASTICSEARCH_RELOAD_CONNECTIONS='true'`
+- `EA_ELASTICSEARCH_LOGSTASH_PREFIX='logstash'`
 
 ## License
 
