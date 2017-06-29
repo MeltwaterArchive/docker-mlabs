@@ -1,7 +1,12 @@
 # Nginx HTTP Forward Proxy
 
 Starts an HTTP Nginx server on port 80 which forwards all
-requests to `PROXY_PASS`.
+requests to an external host.
+
+## Environment Variables
+
+- `PROXY_PASS=https://example.com`
+- `ACCESS_LOG=off`
 
 ## License
 

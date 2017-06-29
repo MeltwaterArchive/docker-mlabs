@@ -1,6 +1,7 @@
 FROM nginx:stable-alpine
 
 ENV PROXY_PASS="https://example.com"
+ENV ACCESS_LOG="off"
 
 COPY run.sh /run.sh
 COPY default.template /etc/nginx/conf.d/default.template

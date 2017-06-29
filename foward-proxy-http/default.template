@@ -1,5 +1,5 @@
 server {
-  access_log off;
+  access_log ${ACCESS_LOG};
 
   location /_health {
     default_type text/plain;
