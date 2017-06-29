@@ -1,7 +1,6 @@
 server {
-  access_log ${ACCESS_LOG};
-
   location /_health {
+    access_log off;
     default_type text/plain;
     return 200 "OK";
   }

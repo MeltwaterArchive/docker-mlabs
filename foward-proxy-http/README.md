@@ -6,7 +6,6 @@ requests to an external host.
 ## Environment Variables
 
 - `PROXY_PASS=https://example.com`
-- `ACCESS_LOG=off`
 
 ## License
 
