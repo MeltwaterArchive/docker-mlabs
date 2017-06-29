@@ -1,4 +1,4 @@
-# Redis CLI
+# Mongo Client
 
 The entrypoint is the [`mongo`][mongo] client command provided by [Mongo].
 
