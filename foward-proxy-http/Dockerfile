@@ -1,4 +1,4 @@
-FROM nginx:stable-alpine
+FROM nginx:mainline-alpine
 
 ENV PROXY_PASS="https://example.com"
 ENV ACCESS_LOG="off"
