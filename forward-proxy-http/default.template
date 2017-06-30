@@ -7,8 +7,8 @@ server {
 
   location / {
     proxy_pass ${PROXY_PASS};
-    proxy_set_header Host ${PROXY_HOST};
     proxy_ssl_server_name on;
+    proxy_hide_header Referer;
     real_ip_header X-Forwarded-For;
     set_real_ip_from 0.0.0.0/0;
   }
