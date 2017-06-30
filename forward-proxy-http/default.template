@@ -1,6 +1,7 @@
 server {
+  access_log off;
+
   location /_health {
-    access_log off;
     default_type text/plain;
     return 200 "OK";
   }
