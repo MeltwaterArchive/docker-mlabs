@@ -1,6 +1,6 @@
 # Nginx HTTP Forward Proxy
 
-Starts an HTTP [Nginx] server on port 80 which forwards all
+Starts a [Nginx] HTTP server on port 80 which forwards all
 requests to an external host.
 
 Does not pass the `Cf-Connecting-Ip` header to the proxied host:
