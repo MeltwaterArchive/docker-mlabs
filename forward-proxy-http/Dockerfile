@@ -1,6 +1,7 @@
 FROM nginx:mainline-alpine
 
 ENV PROXY_PASS="https://example.com"
+ENV PROXY_HOST="example.com"
 ENV ACCESS_LOG="off"
 
 COPY run.sh /run.sh
