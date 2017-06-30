@@ -6,6 +6,7 @@ requests to an external host.
 ## Environment Variables
 
 - `PROXY_PASS=https://example.com`
+- `PROXY_HIDE_HEADER=Cf-Ray`
 
 ## License
 

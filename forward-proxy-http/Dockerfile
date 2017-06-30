@@ -1,8 +1,7 @@
 FROM nginx:mainline-alpine
 
 ENV PROXY_PASS="https://example.com"
-ENV PROXY_HOST="example.com"
-ENV ACCESS_LOG="off"
+ENV PROXY_HIDE_HEADER="Cf-Ray"
 
 COPY run.sh /run.sh
 COPY default.template /etc/nginx/conf.d/default.template
