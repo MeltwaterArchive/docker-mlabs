@@ -1,0 +1,43 @@
+cluster:
+  name: ${CLUSTER_NAME}
+
+node:
+  master: ${NODE_MASTER}
+  data: ${NODE_DATA}
+
+network.host: ${NETWORK_HOST}
+
+path:
+  data: /data/data
+  logs: /data/log
+  work: /data/work
+
+bootstrap.mlockall: true
+
+cloud:
+  kubernetes:
+    service: ${DISCOVERY_SERVICE}
+    namespace: ${NAMESPACE}
+discovery:
+    type: kubernetes
+
+#cache control
+indices.fielddata.cache.size: 25%
+indices.fielddata.cache.expire: 12h
+indices.cache.filter.size: 25%
+indices.cache.filter.expire: 12h
+
+#circuit breaker to prevent oversized memory allocation by aggregation/query
+indices.breaker.fielddata.limit: "40%"
+
+# interval to documents be available to search
+index.refresh_interval: "30s"
+
+cluster.routing.allocation.node_concurrent_recoveries: 8
+cluster.routing.allocation.node_initial_primaries_recoveries: 8
+cluster.routing.allocation.disk.include_relocations: false
+
+indices.recovery.concurrent_streams: 4
+
+discovery.zen.minimum_master_nodes: 1
+
