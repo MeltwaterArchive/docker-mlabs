@@ -7,7 +7,7 @@ This image is based on the [Elastic 5.5 oficial image](https://github.com/elasti
 
 - `CLUSTER_NAME=cluster-name`
 - `NODE_MASTER=true|false`
-- `NODE_DATA=true-false`
+- `NODE_DATA=true|false`
 
 ## License
 
