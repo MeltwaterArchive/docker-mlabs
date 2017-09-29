@@ -1,0 +1,73 @@
+source /usr/share/zplug/init.zsh
+
+# Load syntax highlighing.
+zplug 'zsh-users/zsh-syntax-highlighting', defer:2
+
+# Load substring history search.
+zplug 'zsh-users/zsh-history-substring-search', defer:3
+
+# Oh-My-Zsh libs to load.
+oh_my_zsh_libs=(
+  compfix
+  completion
+  diagnostics
+  directories
+  functions
+  git
+  grep
+  history
+  key-bindings
+  misc
+  prompt_info_functions
+  spectrum
+  termsupport
+  theme-and-appearance
+)
+
+# Oh-My-Zsh plugins to load.
+oh_my_zsh_plugins=()
+
+## Core
+oh_my_zsh_plugins+=(
+  colored-man-pages
+  colorize
+  cp
+  encode64
+  extract
+  git
+  rsync
+)
+
+## Developer tools
+oh_my_zsh_plugins+=(
+  aws
+  httpie
+)
+
+# Load Oh-My-Zsh libs.
+for lib in $oh_my_zsh_libs; do
+  zplug "lib/$lib", from:oh-my-zsh, defer:1
+done
+
+# Load Oh-My-Zsh plugins.
+for plugin in $oh_my_zsh_plugins; do
+  zplug "plugins/$plugin", from:oh-my-zsh, defer:1
+done
+
+if ! zplug check --verbose; then
+  zplug install
+fi
+
+zplug load
+
+# Set binds for word and line movement.
+bindkey '^F' forward-word
+bindkey '^V' backward-word
+bindkey '^A' beginning-of-line
+bindkey '^E' end-of-line
+
+# Set binds for history-substring-search.
+bindkey '^P' history-substring-search-up
+bindkey '^N' history-substring-search-down
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
