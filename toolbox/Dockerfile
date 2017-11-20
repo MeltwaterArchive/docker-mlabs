@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install -y \
     lua-nvim \
     mariadb-client \
     mongo-tools \
+    mongodb-clients \
     neovim \
     p7zip \
     redis-tools \
