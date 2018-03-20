@@ -1,5 +1,5 @@
-FROM alpine:edge
+FROM python:alpine
 
-RUN apk add --no-cache aws-cli
+RUN pip install --no-cache-dir awscli
 
 ENTRYPOINT ["aws"]
