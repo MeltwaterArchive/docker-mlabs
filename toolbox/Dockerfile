@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y \
     awscli \
     colordiff \
     curl \
+    dnsutils \
     gawk \
     git \
     httpie \
@@ -14,11 +15,14 @@ RUN apt-get update && apt-get install -y \
     mariadb-client \
     mongo-tools \
     neovim \
+    net-tools \
+    nmap \
     p7zip \
     redis-tools \
     rsync \
     ruby-neovim \
     silversearcher-ag \
+    traceroute \
     vim \
     wget \
     zplug \
