@@ -3,7 +3,10 @@
 set -e
 set -u
 
-envsubst < /etc/nginx/conf.d/default.template > /etc/nginx/conf.d/default.conf
+envsubst '${PROXY_PASS}' \
+  < /etc/nginx/conf.d/default.template \
+  > /etc/nginx/conf.d/default.conf
+
 "$@" &
 pid="$!"
 trap SIGINT SIGTERM

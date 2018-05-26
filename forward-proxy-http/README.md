@@ -3,13 +3,7 @@
 Starts a [Nginx] HTTP server on port 80 which forwards all
 requests to an external host.
 
-Does not pass the `Cf-Connecting-Ip` header to the proxied host:
-this allows proxying within a single [Cloudflare] zone.
-Otherwise Cloudflare will return
-[Error 1000: DNS points to prohibited IP][Error 1000].
-
 [Cloudflare]: https://www.cloudflare.com/l
-[Error 1000]: https://support.cloudflare.com/hc/en-us/articles/200171976-Error-1000-DNS-points-to-prohibited-IP
 [Nginx]: https://www.nginx.com/
 
 ## Environment Variables
