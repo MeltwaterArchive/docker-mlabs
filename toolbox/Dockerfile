@@ -14,6 +14,7 @@ RUN apt-get update && apt-get install -y \
     lua-nvim \
     mariadb-client \
     mongo-tools \
+    mssql-cli \
     neovim \
     net-tools \
     nmap \
