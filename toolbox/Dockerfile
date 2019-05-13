@@ -14,7 +14,6 @@ RUN apt-get update && apt-get install -y \
     lua-nvim \
     mariadb-client \
     mongo-tools \
-    mssql-cli \
     neovim \
     net-tools \
     nmap \
@@ -28,13 +27,8 @@ RUN apt-get update && apt-get install -y \
     wget \
     zplug \
     zsh \
- && rm -rf /var/lib/apt/lists/*
-
-RUN apt-get update && apt-get install -y \
     apt-transport-https \
-    curl \
     gnupg \
-    wget \
  && wget -qO- https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
  && echo "deb [arch=amd64] https://packages.microsoft.com/debian/8/prod jessie main" \
     | tee /etc/apt/sources.list.d/mssql-cli.list \
