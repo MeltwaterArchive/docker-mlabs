@@ -30,6 +30,18 @@ RUN apt-get update && apt-get install -y \
     zsh \
  && rm -rf /var/lib/apt/lists/*
 
+RUN apt-get update && apt-get install -y \
+    apt-transport-https \
+    curl \
+    gnupg \
+    wget \
+ && wget -qO- https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
+ && echo "deb [arch=amd64] https://packages.microsoft.com/debian/8/prod jessie main" \
+    | tee /etc/apt/sources.list.d/mssql-cli.list \
+ && apt-get update && apt-get install -y \
+    mssql-cli \
+ && rm -rf /var/lib/apt/lists/*
+
 RUN localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
 ENV LANG en_US.utf8
 
