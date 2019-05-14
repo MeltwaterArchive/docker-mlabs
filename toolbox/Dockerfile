@@ -30,7 +30,7 @@ RUN apt-get update && apt-get install -y \
     apt-transport-https \
     gnupg \
  && wget -qO- https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
- && echo "deb [arch=amd64] https://packages.microsoft.com/debian/8/prod jessie main" \
+ && echo "deb [arch=amd64] https://packages.microsoft.com/debian/9/prod stretch main" \
     | tee /etc/apt/sources.list.d/mssql-cli.list \
  && apt-get update && apt-get install -y \
     mssql-cli \
