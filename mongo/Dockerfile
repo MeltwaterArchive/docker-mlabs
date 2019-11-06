@@ -3,6 +3,7 @@ FROM debian:stretch
 RUN apt-get update && apt-get install -y \
     gnupg \
     wget \
+ && wget https://s3.amazonaws.com/rds-downloads/rds-combined-ca-bundle.pem \ 
  && wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | apt-key add - \
  && echo "deb http://repo.mongodb.org/apt/debian stretch/mongodb-org/4.2 main" \
     | tee /etc/apt/sources.list.d/mongodb-org-4.2.list \
